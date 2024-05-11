@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@drawable/background"
+    tools:context=".CartLabActivity">
+
+
+    <Button
+        android:id="@+id/buttonBMCBack"
+        android:layout_width="146dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:text="BACK"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.871"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonBMCDatePicker"
+        tools:ignore="MissingConstraints" />
+
+    <ListView
+        android:id="@+id/listViewArticle"
+        android:layout_width="366dp"
+        android:layout_height="326dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewLTBTitle" />
+
+    <TextView
+        android:id="@+id/textViewBMPackageName"
+        android:layout_width="217dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="8dp"
+        android:text="Deliver Location : Tunis"
+        android:textColor="@color/colorWhite"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.613"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_logo7" />
+
+    <TextView
+        android:id="@+id/textView_logo7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="24*7 HEALTHCARE"
+        android:textColor="@color/purple_200"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/buttonBMCCheckout"
+        android:layout_width="132dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+
+        android:text="Checkout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.22"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonBMCartTimePicker"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textViewBMC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Total Cost : 2000/-"
+        android:textColor="@color/yellowLight"
+
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.518"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/listViewArticle" />
+
+    <Button
+        android:id="@+id/buttonBMCartTimePicker"
+        style="?android:spinnerStyle"
+        android:layout_width="129dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:text="10:00"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.209"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewBMTime"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/buttonBMCDatePicker"
+        style="?android:spinnerStyle"
+        android:layout_width="129dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="4dp"
+        android:text="15/04/2024"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.819"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewBMDate"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textViewBMDate"
+        android:layout_width="121dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="28dp"
+        android:text="Select Deliver Date"
+        android:textColor="@color/yellowLight"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.796"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewBMC" />
+
+    <TextView
+        android:id="@+id/textViewBMTime"
+        android:layout_width="129dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="28dp"
+        android:text="Select Deliver Time"
+        android:textColor="@color/yellowLight"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.209"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewBMC" />
+
+    <TextView
+        android:id="@+id/textViewLTBTitle"
+        android:layout_width="210dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="9dp"
+        android:text="Lab Test Cart Items"
+        android:textColor="@color/yellowLight"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewBMPackageName" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
